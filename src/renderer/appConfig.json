@@ -1,0 +1,47 @@
+{
+    "username": "admin",
+    "password": "123",
+    "isAutoStart": false,
+    "autoLogin": false,
+    "rememberPwd": false,
+    "backLogin": false,
+    "commonSize": 3,
+    "openCheckUpdate": true,
+    "updateServerPath": "http://127.0.0.1:9010/",
+    "apps": [
+        {
+            "type": 1,
+            "name": "electron官网",
+            "firstLetterStr": "egw",
+            "icon": "",
+            "useCount": 0,
+            "appPath": "https://www.electronjs.org/"
+        },
+        {
+            "type": 1,
+            "name": "百度electron",
+            "firstLetterStr": "bde",
+            "icon": "",
+            "useCount": 0,
+            "appPath": "https://www.baidu.com/s",
+            "param": {
+                "wd": "electron"
+            }
+        },
+        {
+            "type": 1,
+            "name": "工作量汇总报表",
+            "firstLetterStr": "gzlhzbb",
+            "icon": "",
+            "useCount": 0,
+            "appPath": "http://10.32.0.171:8080/bip/?clz=com.bsoft.bip.report.view.ReportViewPrint",
+            "param": {
+                "idReport": "01003200017169449861570067501056",
+                "uid": "com001",
+                "pwd": "123456",
+                "udId": "64af555692488d22e4cf6293",
+                "tenantId": "bi"
+            }
+        }
+    ]
+}
