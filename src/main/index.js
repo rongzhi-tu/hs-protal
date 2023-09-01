@@ -51,7 +51,7 @@ function createWindow () {
     // mainWindow.setBackgroundColor('#f1f2f3')
     mainWindow.show()
     // mainWindow.webContents.openDevTools()
-    require("./EdgeDisplayBrowserWin").edgeDisplay(mainWindow,screen,app)
+    // require("./EdgeDisplayBrowserWin").edgeDisplay(mainWindow,screen,app)
     globalShortcut.register('ctrl + i',() => mainWindow.webContents.openDevTools())
     globalShortcut.register('ctrl + r',() => mainWindow.webContents.reload())
      //系统托盘  生产环境使用
@@ -93,6 +93,12 @@ const menu_tpl = [
       {
           mainWindow.webContents.send("autostart_click")
       }
+  },{
+    label:'在线消息', 
+    click()
+    {
+        mainWindow.webContents.send("online_msg_click")
+    }
   }, {
       label:'返回登录', 
       click(){

@@ -3,10 +3,10 @@
     "password": "123",
     "isAutoStart": false,
     "autoLogin": false,
-    "rememberPwd": false,
+    "rememberPwd": true,
     "backLogin": false,
     "commonSize": 3,
-    "openCheckUpdate": true,
+    "openCheckUpdate": false,
     "updateServerPath": "http://127.0.0.1:9010/",
     "apps": [
         {
@@ -14,7 +14,7 @@
             "name": "electron官网",
             "firstLetterStr": "egw",
             "icon": "",
-            "useCount": 0,
+            "useCount": 1,
             "appPath": "https://www.electronjs.org/"
         },
         {
@@ -22,7 +22,7 @@
             "name": "百度electron",
             "firstLetterStr": "bde",
             "icon": "",
-            "useCount": 0,
+            "useCount": 2,
             "appPath": "https://www.baidu.com/s",
             "param": {
                 "wd": "electron"

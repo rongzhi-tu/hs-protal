@@ -202,7 +202,11 @@ export default
         {
             this.$bus.$emit("event-reset-bg")
         },
-     
+        gotoMsgPage(){
+            this.$router.push({
+                path:'/msg'
+            })
+        },
         getLocalIP() {
             const os = require('os');
             const osType = os.type(); //系统类型
@@ -281,6 +285,7 @@ export default
         this.$bus.$emit("event-clean-bg")
         this.$electron.ipcRenderer.on("backLogin", () => this.onBack())
         this.$electron.ipcRenderer.on("autostart_click", () => this.autostartClick())
+        this.$electron.ipcRenderer.on("online_msg_click", () => this.gotoMsgPage())
     },
     computed:
     {

@@ -65,5 +65,13 @@
                 }
             }
         }
+
+        exports.CommApi = {
+            containStrIgnore(data,filterValue){
+                filterValue = filterValue + ''
+                return data.indexOf(filterValue) !== -1 || 
+                data.toUpperCase().indexOf(filterValue.toUpperCase()) !== -1
+            }
+        }
     }
 )()

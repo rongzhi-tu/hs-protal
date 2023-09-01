@@ -22,6 +22,11 @@ export default new Router({
       component: require('@/components/ProtalMain').default
     },
     {
+      path: '/msg',
+      name: 'msg',
+      component: require('@/components/MsgMain').default
+    },
+    {
       path: '*',
       redirect: '/'
     }

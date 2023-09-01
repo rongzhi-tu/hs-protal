@@ -25,7 +25,7 @@
     {
        this.$bus.$on('event-clean-bg', () => {
          debugger
-          this.appBcStyle = ""
+          this.appBcStyle = "width:100%;height:100%;"
        });
        this.$bus.$on('event-reset-bg', () => {
           this.appBcStyle = this.backStyle
